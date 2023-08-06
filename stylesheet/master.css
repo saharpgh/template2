@@ -1,0 +1,228 @@
+.header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/Screenshot\ 2023-08-05\ 195102.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.header > div {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.575);
+  color: white;
+}
+.header > div > div:nth-of-type(1) {
+  height: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: bold;
+}
+.header > div > div:nth-of-type(1) > div {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header > div > div:nth-of-type(1) > div > img {
+  margin-left: 30px;
+  width: 150px;
+}
+.header > div > div:nth-of-type(1) > div:nth-of-type(3) {
+  width: 100px;
+  margin-right: 30px;
+}
+.header > div > div:nth-of-type(1) > div:nth-of-type(3) > i {
+  margin: 0 10px;
+}
+.header > div > div:nth-of-type(1) > div:nth-of-type(2) {
+  margin-left: 590px;
+  width: 600px;
+}
+.header > div > div:nth-of-type(1) > div:nth-of-type(2) > ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.header > div > div:nth-of-type(1) > div:nth-of-type(2) > ul > * {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  letter-spacing: 2px;
+  transition: 1s;
+}
+.header > div > div:nth-of-type(1) > div:nth-of-type(2) > ul > *:hover {
+  color: rgba(188, 143, 143, 0.737);
+  text-decoration: underline;
+}
+.header > div > div:nth-of-type(2) {
+  width: 80%;
+  height: 80%;
+  margin: 0 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header > div > div:nth-of-type(2) > * {
+  width: 100%;
+}
+.header > div > div:nth-of-type(2) > h2 {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  letter-spacing: 15px;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-family: "Edu SA Beginner", cursive;
+  font-family: "Quicksand", sans-serif;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.699);
+}
+.header > div > div:nth-of-type(2) > h1 {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-family: "Edu SA Beginner", cursive;
+  font-family: "Quicksand", sans-serif;
+  text-transform: uppercase;
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 30px;
+  margin-top: -150px;
+  color: rgb(232, 170, 160);
+}
+.header > div > div:nth-of-type(2) > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -80px;
+  height: 50px;
+}
+.header > div > div:nth-of-type(2) > div > * {
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0 50px;
+  border: 1px solid rgba(255, 255, 255, 0.699);
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.header > div > div:nth-of-type(2) > div > *:nth-of-type(1):hover {
+  color: rgb(232, 170, 160);
+  background: rgb(255, 255, 255);
+}
+.header > div > div:nth-of-type(2) > div > *:nth-of-type(2):hover {
+  color: rgb(255, 255, 255);
+  background: rgb(232, 170, 160);
+}
+
+.topmenu {
+  width: 100%;
+  height: 300px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.topmenu > div {
+  width: 80%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.topmenu > div > div {
+  border-radius: 5px;
+  width: 28%;
+  margin: 0 40px;
+}
+.topmenu > div > div > * {
+  width: 100%;
+  height: 33%;
+}
+.topmenu > div > div > h3 {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  color: rgb(232, 170, 160);
+}
+.topmenu > div > div > h4 {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-family: "Edu SA Beginner", cursive;
+  font-family: "Quicksand", sans-serif;
+  margin-top: -30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.748);
+  letter-spacing: 10px;
+}
+.topmenu > div > div > p {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.518);
+}
+
+.middle {
+  width: 100%;
+}
+.middle > div:nth-of-type(1) {
+  width: 100%;
+  height: 400px;
+  background-color: rgb(249, 235, 232);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: absolute;
+}
+.middle > div:nth-of-type(1) > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.middle > div:nth-of-type(1) > h5 {
+  color: rgb(232, 171, 161);
+  font-size: 20px;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-family: "Edu SA Beginner", cursive;
+  font-family: "Quicksand", sans-serif;
+  letter-spacing: 5px;
+}
+.middle > div:nth-of-type(1) h4 {
+  margin-top: -250px;
+  font-size: 50px;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-family: "Edu SA Beginner", cursive;
+  font-family: "Quicksand", sans-serif;
+  letter-spacing: 10px;
+  font-weight: bold;
+}
+.middle > div:nth-of-type(2) {
+  width: 840px;
+  height: 540px;
+  border: 2px solid red;
+  position: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.middle > div:nth-of-type(3) {
+  width: 100%;
+  height: 400px;
+  background-color: white;
+}
+.middle > div:nth-of-type(4) {
+  width: 100%;
+  height: 120vh;
+  position: absolute;
+  background-image: url(../img/services2-1.jpg);
+  background-size: cover;
+  position: relative;
+}/*# sourceMappingURL=master.css.map */
