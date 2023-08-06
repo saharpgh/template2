@@ -188,7 +188,6 @@
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
-            position: absolute;
             >*{
                 display: flex;
                 justify-content: center;
@@ -214,28 +213,123 @@
             }
         }
         &:nth-of-type(2){
+            position: absolute;
             width: 840px;
             height: 540px;
-            border: 2px solid red;
-            position: grid;
+            // border: 2px solid red;
+            display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(2, 1fr);
-            // position: absolute;
+            top: 190vh;
+            left: 350px;
+            >div{
+                // border: 2px solid red;
+                display: flex;
+                flex-wrap: wrap;
+                >img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transition: .4s;
 
+                }
+                >p{
+                    width: 100%;
+                    height: 20%;
+                    color: white;
+                    background-color: #000000;
+                    opacity: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-transform: uppercase;
+                    font-family: 'Bai Jamjuree', sans-serif;
+                    font-family: 'Edu SA Beginner', cursive;
+                    font-family: 'Quicksand', sans-serif;
+                    font-weight: bold;
+                }
+                &:hover{
+                    >img{
+                        height: 80%;
+                    }
+                    >p{
+                        opacity: 1;
+                    }
+                }
+            }
         }
         &:nth-of-type(3){
             width: 100%;
-            height: 400px;
+            height: 380px;
             background-color: white;
-            // position: absolute;
         }
-        &:nth-of-type(4){
-            width: 100%;
-            height: 120vh;
-            position: absolute;
-            background-image: url(../img/services2-1.jpg);
-            background-size: cover;
-            position: relative;
+    }
+}
+.service{
+    width: 100%;
+    height: 120vh;
+    background-image: url(../img/services2-1.jpg);
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    >div{
+        border: 2px solid white;
+        width: 50%;
+        position: relative;
+        &:nth-of-type(2){
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            >div{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 200px;
+                &:nth-of-type(1){
+                    border: 2px solid rgba(255, 255, 255, 0.437);
+                    width: 70%;
+                    height: 60%;
+                    border-radius: 50%;
+                    position: relative;
+                }
+                &:nth-of-type(2){
+                    position: absolute;
+                    border: 2px solid rgba(255, 255, 255, 0.437);
+                    width: 50%;
+                    height: 45%;
+                    border-radius: 50%;
+                    background-color: white;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    >*{
+                        width: 100%;
+                        // border: 2px solid red;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-family: 'Bai Jamjuree', sans-serif;
+                        font-family: 'Edu SA Beginner', cursive;
+                        font-family: 'Quicksand', sans-serif;
+                    }
+                    >i{
+                        font-size: 60px;
+                        color: rgba(232,170,160,255);
+                        margin-top: 30px;
+                    }
+                    >h4{
+                        font-size: 25px;
+                        margin-top: -70px;
+                    }
+                    >p{
+                        width: 70%;
+                        font-size: 15px;
+                        margin-top: -120px;
+                        text-align: center;
+                    }
+                }
+            }
         }
     }
 }

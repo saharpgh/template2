@@ -180,7 +180,6 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  position: absolute;
 }
 .middle > div:nth-of-type(1) > * {
   display: flex;
@@ -206,23 +205,117 @@
   font-weight: bold;
 }
 .middle > div:nth-of-type(2) {
+  position: absolute;
   width: 840px;
   height: 540px;
-  border: 2px solid red;
-  position: grid;
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  top: 190vh;
+  left: 350px;
+}
+.middle > div:nth-of-type(2) > div {
+  display: flex;
+  flex-wrap: wrap;
+}
+.middle > div:nth-of-type(2) > div > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.4s;
+}
+.middle > div:nth-of-type(2) > div > p {
+  width: 100%;
+  height: 20%;
+  color: white;
+  background-color: #000000;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-family: "Edu SA Beginner", cursive;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+}
+.middle > div:nth-of-type(2) > div:hover > img {
+  height: 80%;
+}
+.middle > div:nth-of-type(2) > div:hover > p {
+  opacity: 1;
 }
 .middle > div:nth-of-type(3) {
   width: 100%;
-  height: 400px;
+  height: 380px;
   background-color: white;
 }
-.middle > div:nth-of-type(4) {
+
+.service {
   width: 100%;
   height: 120vh;
-  position: absolute;
   background-image: url(../img/services2-1.jpg);
   background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+}
+.service > div {
+  border: 2px solid white;
+  width: 50%;
   position: relative;
+}
+.service > div:nth-of-type(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.service > div:nth-of-type(2) > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 200px;
+}
+.service > div:nth-of-type(2) > div:nth-of-type(1) {
+  border: 2px solid rgba(255, 255, 255, 0.437);
+  width: 70%;
+  height: 60%;
+  border-radius: 50%;
+  position: relative;
+}
+.service > div:nth-of-type(2) > div:nth-of-type(2) {
+  position: absolute;
+  border: 2px solid rgba(255, 255, 255, 0.437);
+  width: 50%;
+  height: 45%;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.service > div:nth-of-type(2) > div:nth-of-type(2) > * {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-family: "Edu SA Beginner", cursive;
+  font-family: "Quicksand", sans-serif;
+}
+.service > div:nth-of-type(2) > div:nth-of-type(2) > i {
+  font-size: 60px;
+  color: rgb(232, 170, 160);
+  margin-top: 30px;
+}
+.service > div:nth-of-type(2) > div:nth-of-type(2) > h4 {
+  font-size: 25px;
+  margin-top: -70px;
+}
+.service > div:nth-of-type(2) > div:nth-of-type(2) > p {
+  width: 70%;
+  font-size: 15px;
+  margin-top: -120px;
+  text-align: center;
 }/*# sourceMappingURL=master.css.map */
