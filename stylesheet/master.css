@@ -12,6 +12,7 @@
   color: white;
 }
 .header > div > div:nth-of-type(1) {
+  position: fixed;
   height: 80px;
   display: flex;
   flex-wrap: wrap;
@@ -32,7 +33,7 @@
   width: 100px;
   margin-right: 30px;
 }
-.header > div > div:nth-of-type(1) > div:nth-of-type(3) > i {
+.header > div > div:nth-of-type(1) > div:nth-of-type(3) > a {
   margin: 0 10px;
 }
 .header > div > div:nth-of-type(1) > div:nth-of-type(2) {
@@ -261,9 +262,50 @@
   flex-wrap: wrap;
 }
 .service > div {
-  border: 2px solid white;
   width: 50%;
   position: relative;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.service > div:nth-of-type(1) {
+  width: 50%;
+  height: 60%;
+  margin-top: 200px;
+  flex-wrap: wrap;
+  padding: 70px;
+}
+.service > div:nth-of-type(1) > * {
+  width: 100%;
+  color: white;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-family: "Edu SA Beginner", cursive;
+  font-family: "Quicksand", sans-serif;
+}
+.service > div:nth-of-type(1) > h6 {
+  font-size: 15px;
+  color: rgb(188, 143, 143);
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+.service > div:nth-of-type(1) > h4 {
+  letter-spacing: 10px;
+  font-size: 50px;
+  font-weight: bold;
+}
+.service > div:nth-of-type(1) > p {
+  font-size: 15px;
+}
+.service > div:nth-of-type(1) > a {
+  background-color: rgb(188, 143, 143);
+  width: 150px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 470px;
+  font-weight: bold;
 }
 .service > div:nth-of-type(2) {
   display: flex;
@@ -274,7 +316,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 200px;
 }
 .service > div:nth-of-type(2) > div:nth-of-type(1) {
   border: 2px solid rgba(255, 255, 255, 0.437);
@@ -283,11 +324,94 @@
   border-radius: 50%;
   position: relative;
 }
-.service > div:nth-of-type(2) > div:nth-of-type(2) {
+.service > div:nth-of-type(2) > div:nth-of-type(1) > a {
+  background-color: white;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.6392156863);
+  transition: 0.4s;
+}
+.service > div:nth-of-type(2) > div:nth-of-type(1) > a:nth-child(1) {
+  top: -6%;
+  left: 42%;
+}
+.service > div:nth-of-type(2) > div:nth-of-type(1) > a:nth-child(1):hover ~ div > div {
+  display: none;
+}
+.service > div:nth-of-type(2) > div:nth-of-type(1) > a:nth-child(1):hover ~ div > div:nth-of-type(1) {
+  display: flex;
+}
+.service > div:nth-of-type(2) > div:nth-of-type(1) > a:nth-child(2) {
+  top: 20%;
+  left: 87%;
+}
+.service > div:nth-of-type(2) > div:nth-of-type(1) > a:nth-child(2):hover ~ div > div {
+  display: none;
+}
+.service > div:nth-of-type(2) > div:nth-of-type(1) > a:nth-child(2):hover ~ div > div:nth-of-type(2) {
+  display: flex;
+}
+.service > div:nth-of-type(2) > div:nth-of-type(1) > a:nth-child(3) {
+  top: 70%;
+  left: 84%;
+}
+.service > div:nth-of-type(2) > div:nth-of-type(1) > a:nth-child(3):hover ~ div > div {
+  display: none;
+}
+.service > div:nth-of-type(2) > div:nth-of-type(1) > a:nth-child(3):hover ~ div > div:nth-of-type(3) {
+  display: flex;
+}
+.service > div:nth-of-type(2) > div:nth-of-type(1) > a:nth-child(4) {
+  top: 92%;
+  left: 42%;
+}
+.service > div:nth-of-type(2) > div:nth-of-type(1) > a:nth-child(4):hover ~ div > div {
+  display: none;
+}
+.service > div:nth-of-type(2) > div:nth-of-type(1) > a:nth-child(4):hover ~ div > div:nth-of-type(4) {
+  display: flex;
+}
+.service > div:nth-of-type(2) > div:nth-of-type(1) > a:nth-child(5) {
+  top: 70%;
+  left: 2%;
+}
+.service > div:nth-of-type(2) > div:nth-of-type(1) > a:nth-child(5):hover ~ div > div {
+  display: none;
+}
+.service > div:nth-of-type(2) > div:nth-of-type(1) > a:nth-child(5):hover ~ div > div:nth-of-type(5) {
+  display: flex;
+}
+.service > div:nth-of-type(2) > div:nth-of-type(1) > a:nth-child(6) {
+  top: 20%;
+  left: -1%;
+}
+.service > div:nth-of-type(2) > div:nth-of-type(1) > a:nth-child(6):hover ~ div > div {
+  display: none;
+}
+.service > div:nth-of-type(2) > div:nth-of-type(1) > a:nth-child(6):hover ~ div > div:nth-of-type(6) {
+  display: flex;
+}
+.service > div:nth-of-type(2) > div:nth-of-type(1) > a:hover {
+  background: rgb(188, 143, 143);
+  color: white;
+}
+.service > div:nth-of-type(2) > div:nth-of-type(1) > a:hover:hover ~ div > div {
+  display: none;
+}
+.service > div:nth-of-type(2) > div:nth-of-type(1) > a:hover:hover ~ div > div:nth-of-type(7) {
+  display: flex;
+}
+.service > div:nth-of-type(2) > div:nth-of-type(1) > div {
   position: absolute;
   border: 2px solid rgba(255, 255, 255, 0.437);
-  width: 50%;
-  height: 45%;
+  width: 70%;
+  height: 70%;
   border-radius: 50%;
   background-color: white;
   display: flex;
@@ -295,7 +419,15 @@
   justify-content: center;
   align-items: center;
 }
-.service > div:nth-of-type(2) > div:nth-of-type(2) > * {
+.service > div:nth-of-type(2) > div:nth-of-type(1) > div > div {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.service > div:nth-of-type(2) > div:nth-of-type(1) > div > div > * {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -304,18 +436,28 @@
   font-family: "Edu SA Beginner", cursive;
   font-family: "Quicksand", sans-serif;
 }
-.service > div:nth-of-type(2) > div:nth-of-type(2) > i {
+.service > div:nth-of-type(2) > div:nth-of-type(1) > div > div:nth-of-type(1) {
+  display: flex;
+}
+.service > div:nth-of-type(2) > div:nth-of-type(1) > div > div > i {
   font-size: 60px;
   color: rgb(232, 170, 160);
-  margin-top: 30px;
+  margin-top: -20px;
 }
-.service > div:nth-of-type(2) > div:nth-of-type(2) > h4 {
+.service > div:nth-of-type(2) > div:nth-of-type(1) > div > div > h4 {
   font-size: 25px;
-  margin-top: -70px;
+  margin-top: 20px;
 }
-.service > div:nth-of-type(2) > div:nth-of-type(2) > p {
+.service > div:nth-of-type(2) > div:nth-of-type(1) > div > div > p {
   width: 70%;
   font-size: 15px;
-  margin-top: -120px;
   text-align: center;
+  margin-top: 20px;
+}
+
+.client {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/testimonials2.jpg);
+  background-size: cover;
 }/*# sourceMappingURL=master.css.map */
