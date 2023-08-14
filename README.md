@@ -1,3 +1,3 @@
-# template3
-my third template with flex position and megamenu
+# template2
+my template with flex/position/megamenu
 its not responsive
